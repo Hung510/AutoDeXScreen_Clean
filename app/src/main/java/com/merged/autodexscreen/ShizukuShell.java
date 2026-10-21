@@ -17,12 +17,10 @@ public class ShizukuShell {
 
                 OutputStream os = process.getOutputStream();
                 for (String cmd : commands) {
-                    os.write((cmd + "
-").getBytes());
+                    os.write((cmd + "\n").getBytes());
                     os.flush();
                 }
-                os.write("exit
-".getBytes());
+                os.write("exit\n".getBytes());
                 os.flush();
                 os.close();
                 process.waitFor();
