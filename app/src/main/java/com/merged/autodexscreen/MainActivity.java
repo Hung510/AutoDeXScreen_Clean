@@ -41,8 +41,7 @@ public class MainActivity extends AppCompatActivity {
         layout.addView(statusText);
 
         TextView labelPreset = new TextView(this);
-        labelPreset.setText("
-Preset chọn nhanh cho màn hình xe ô tô:");
+        labelPreset.setText("Preset chọn nhanh cho màn hình xe ô tô:");
         labelPreset.setTextSize(14f);
         layout.addView(labelPreset);
 
